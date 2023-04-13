@@ -9,15 +9,18 @@
     --filter-bg-color: #DEEBFF;
 }
 
+/*couleur Icone + bouton "rechercher"*/
 .fa-solid {
     color: var(--main-color);
 }
 
+/*centrage horizontal de l'ensemble*/
 body {
     display: flex;
     justify-content: center;
 }
 
+/**conteneur de toute la page- parm affichage complet**/
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -25,11 +28,13 @@ body {
     box-sizing: border-box;
 }
 
+/*H2 "Les plus populaires" margin et taille polices*/
 .section-title {
     margin: 0;
     font-size: 22px;
 }
 
+/*presentation carte: contour-fond-etc*/
 .card {
     background-color: white;
     border-radius: 20px;
@@ -71,17 +76,20 @@ body {
     width: 65%;
 }
 
-/****** Populaires ***********/
+/******largeur encadré "les plus Populaires" ***********/
 .populaires {
     width: 32%;
 }
 
+/*disposition en tete encadré "les plus Populaires"**/
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/*affichage horizontal carte populaire et autre : 2 éléments
+photos et complements info*/
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
