@@ -9,7 +9,7 @@
     --filter-bg-color: #DEEBFF;
 }
 
-/*couleur Icone + bouton "rechercher"*/
+/*couleur bleu Icone + bouton "rechercher"*/
 .fa-solid {
     color: var(--main-color);
 }
@@ -20,7 +20,7 @@ body {
     justify-content: center;
 }
 
-/**conteneur de toute la page- parm affichage complet**/
+/**parmetres affichage de toute la page**/
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -28,7 +28,7 @@ body {
     box-sizing: border-box;
 }
 
-/*H2 "Les plus populaires" margin et taille polices*/
+/*margin et taille polices intitué entéte  "Les plus populaires" */
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -42,14 +42,17 @@ body {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+/*taille image carte*/
 .card img {
     object-fit: cover;
 }
 
+/*taille titre image*/
 .card-title {
     font-size: 16px;
 }
 
+/*mise en gras du symboe euro*/
 .euro {
     font-weight: 700;
 }
@@ -59,11 +62,16 @@ body {
 }
 
 /****** Hebergements And Populaires ***********/
+
+/*affiche horizontalement 
+encadré "hebergements" et "les plus Populaires"*/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
 }
 
+/*coleur de fond et forme
+encadré "hebergements" et "les plus Populaires"*/
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
@@ -72,29 +80,34 @@ body {
 }
 
 /****** Hebergements ***********/
+
+/*largeur encadré "hebergements"*/
 .hebergements {
     width: 65%;
 }
 
-/******largeur encadré "les plus Populaires" ***********/
+/****** Populaires ***********/
+
+/*largeur encadré "les plus Populaires"*/
 .populaires {
     width: 32%;
 }
 
-/*disposition en tete encadré "les plus Populaires"**/
+/*affiche horizontal. en tete encadré "les 
+plus Populaires titre + diagramme*/
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/*affichage horizontal carte populaire et autre : 2 éléments
-photos et complements info*/
+/*affiche horizontal. de la photo et du desciptif*/
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
 }
 
+/*taille et bordure de la photo */
 .populaires-cards img {
     width: 33%;
     height: 136px;
@@ -102,6 +115,8 @@ photos et complements info*/
     border-bottom-left-radius: 20px;
 }
 
+/*def. largeur et affiche verticalement descriptif 
+de photo carte*/
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
@@ -111,15 +126,18 @@ photos et complements info*/
     box-sizing: border-box;
 }
 
+/*margin titre carte*/
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
+/*margin sous titre carte*/
 .populaires-cards .card-subtitle {
     margin: 0;
 }
 
+/*spécifie margin Etoiles*/
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
