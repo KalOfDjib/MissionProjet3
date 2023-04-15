@@ -39,8 +39,9 @@ nav {
 nav img {
     width: 61.09px;
     height: 19px;
-    margin-left: 30px;
-    margin-top: 30px
+    margin-left: -10px;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 nav a {
@@ -57,10 +58,57 @@ nav a:hover {
     color: #0065FC;
 }
 
+/*affichage titre de l'intro*/
+.intro {
+    margin-top: 60px;
+    margin-bottom: 8px;
+}
+
 /*margin et taille polices intitué entéte  "Les plus populaires" */
 .section-title {
     margin: 0;
     font-size: 22px;
+}
+
+.padding-searchbar {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/*partie gauche barre de recherche*/
+.left-part {
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 18px;
+    padding-right: 18px;
+    width: 14px;
+    height: 16px;
+}
+
+.middle-part {
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border: none;
+    outline-color: #F2F2F2;
+    outline: #F2F2F2 1px solid;
+}
+
+.rigth-part {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 /*presentation carte: contour-fond-etc*/
