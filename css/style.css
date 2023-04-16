@@ -32,7 +32,6 @@ body {
 nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -44,13 +43,20 @@ nav img {
     margin-bottom: 60px;
 }
 
+.position-liens {
+    display: flex;
+    align-items: start;
+}
+
 nav a {
+    display: block;
     font-weight: 400;
     font-size: 16px;
     margin-left: 20px;
-    padding-top: 14px;
     margin-right: 42.61px;
+    margin-top: -7px;
     color: black;
+    padding-top: 16px;
 }
 
 nav a:hover {
@@ -96,6 +102,9 @@ nav a:hover {
     border: none;
     outline-color: #F2F2F2;
     outline: #F2F2F2 1px solid;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
 }
 
 .rigth-part {
@@ -109,6 +118,35 @@ nav a:hover {
     color: white;
     font-weight: 700;
     font-size: 18px;
+}
+
+/***************Filtres*****************/
+.align-filtres {
+    display: flex;
+    align-items: center;
+}
+
+.space-between-filtres {
+    margin-right: 25px;
+}
+
+.presentation-filtres {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #D9D9D9;
+    gap: 10px;
+    padding: 15px 19px 15px 19px;
+    border-radius: 25px;
+}
+
+.polices-prem-filtre {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.police-filtres {
+    font-weight: 700;
+    font-size: 17px;
 }
 
 /*presentation carte: contour-fond-etc*/
