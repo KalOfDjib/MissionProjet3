@@ -221,7 +221,7 @@ encadré "hebergements" et "les plus Populaires"*/
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/****** Hebergements **********************/
 
 /*largeur encadré "hebergements"*/
 .hebergements {
@@ -369,6 +369,39 @@ de photo carte*/
 
 .populaires-cards .card-title {
     margin-left: 10px;
+}
+
+/**************section Pied de Page***************/
+
+.pied-de-page {
+    width: 1340px;
+    height: 163px;
+    box-sizing: border-box;
+    background-color: var(--main-bg-color);
+}
+
+.contenu-pied-de-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paragraphe-pied-de-page {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    box-sizing: border-box;
+    width: 375px;
+}
+
+.pied-de-page h4 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+.pied-de-page div {
+    margin-top: 15px;
+    padding-left: 20px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
