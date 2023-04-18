@@ -327,6 +327,50 @@ de photo carte*/
     margin-bottom: 15px;
 }
 
+/*****************activites-Marseille**********/
+
+.activites-Marseille {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.activites-Marseille h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.activites-Marseille-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activites-Marseille-card .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+}
+
+.activites-Marseille-card img {
+    width: 297.5px;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites-Marseille .card-content {
+    width: 297.5px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-left: 10px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
