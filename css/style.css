@@ -48,6 +48,11 @@ nav img {
     align-items: start;
 }
 
+h4 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
 nav a {
     display: block;
     font-weight: 400;
@@ -124,6 +129,7 @@ nav a:hover {
 .align-filtres {
     display: flex;
     align-items: center;
+    margin-bottom: 45px;
 }
 
 .space-between-filtres {
@@ -147,6 +153,27 @@ nav a:hover {
 .police-filtres {
     font-weight: 700;
     font-size: 17px;
+}
+
+/******************ligne information********************/
+
+.taille-icone-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #D9D9D9;
+    padding: 5px;
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 35px;
+    color: black;
+    align-items: center;
 }
 
 /*presentation carte: contour-fond-etc*/
@@ -185,7 +212,7 @@ encadré "hebergements" et "les plus Populaires"*/
     justify-content: space-between;
 }
 
-/*coleur de fond et forme
+/*couleur de fond et forme
 encadré "hebergements" et "les plus Populaires"*/
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
@@ -257,8 +284,48 @@ de photo carte*/
     margin-bottom: 5px;
 }
 
+/************partie hebergement********/
+.grid-hebergements-card {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 240px 240px;
+    gap: 30px;
+    margin-top: 20px;
+}
 
+.grid-hebergements-card .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
 
+.grid-hebergements-card img {
+    width: 98%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.grid-hebergements-card .card-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    box-sizing: border-box;
+}
+
+.grid-hebergements-card .card-rating {
+    margin-bottom: 0px;
+}
+
+.grid-hebergements-card .card-title {
+    margin-top: 10px;
+}
+
+.grid-hebergements-card .card-subtitle {
+    margin-bottom: 15px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
