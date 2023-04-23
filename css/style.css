@@ -28,6 +28,16 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
 /*affichage header*/
 nav {
     display: flex;
@@ -64,7 +74,7 @@ nav a {
     padding-top: 16px;
 }
 
-nav a:hover {
+header nav a:hover {
     border-top: 2px solid  #0065FC;
     color: #0065FC;
 }
@@ -144,6 +154,8 @@ nav a:hover {
     padding: 15px 19px 15px 19px;
     border-radius: 25px;
     align-items:center;
+    cursor: pointer;
+    background-color: transparent;
 }
 
 .polices-prem-filtre {
@@ -154,6 +166,10 @@ nav a:hover {
 .police-filtres {
     font-weight: 700;
     font-size: 17px;
+}
+
+.align-filtres button:hover {
+    background-color: #DEEBFF;
 }
 
 /******************ligne information********************/
@@ -277,7 +293,8 @@ de photo carte*/
 
 /*margin sous titre carte*/
 .populaires-cards .card-subtitle {
-    margin: 0;
+    margin-left: 10px;
+
 }
 
 /*spécifie margin Etoiles*/
@@ -350,6 +367,7 @@ de photo carte*/
     display: flex;
     flex-direction: column;
     margin-top: 33px;
+    padding: 0px;
 }
 
 .activites-Marseille-card img {
