@@ -40,13 +40,15 @@ a {
 
 /*affichage header*/
 nav {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
 
 nav img {
-    width: 61.09px;
+    width: 7%;
     height: 19px;
     margin-left: -10px;
     margin-top: 30px;
@@ -54,6 +56,7 @@ nav img {
 }
 
 .position-liens {
+    width: 30%;
     display: flex;
     align-items: start;
 }
@@ -103,7 +106,7 @@ header nav a:hover {
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     padding-top: 15px;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
     padding-left: 18px;
     padding-right: 18px;
     width: 14px;
@@ -112,8 +115,8 @@ header nav a:hover {
 
 .middle-part {
     text-align: center;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 10px;
+    padding-bottom: 13px;
     border: none;
     outline-color: #F2F2F2;
     outline: #F2F2F2 1px solid;
@@ -123,8 +126,8 @@ header nav a:hover {
 }
 
 .rigth-part {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 0px 15px 15px 0px;
@@ -135,15 +138,23 @@ header nav a:hover {
     font-size: 18px;
 }
 
-/***************Filtres*****************/
-.align-filtres {
-    display: flex;
-    align-items: center;
-    margin-bottom: 45px;
+.rigth-part-smalldevice {
+    display: none;
 }
 
-.space-between-filtres {
-    margin-right: 25px;
+/***************Filtres*****************/
+.align-filtres-and-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 45px;
+    gap: 20px;
+}
+
+.align-filtres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: inherit;
 }
 
 .presentation-filtres {
@@ -226,6 +237,7 @@ header nav a:hover {
 encadré "hebergements" et "les plus Populaires"*/
 .hebergements-and-populaires {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -303,53 +315,55 @@ de photo carte*/
 }
 
 /************partie hebergement********/
-.grid-hebergements-card {
-    display: grid;
-    grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 240px 240px;
-    gap: 30px;
+.flex-hebergements-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 20px;
 }
+/*
+.flex-hebergements-card a {
+padding: 0px;
+}*/
 
-.grid-hebergements-card .card {
+.flex-hebergements-card .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 30px;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 210px;
 }
 
-.grid-hebergements-card img {
-    width: 98%;
+.flex-hebergements-card img {
+    width: 100%;
     height: 60%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.grid-hebergements-card .card-content {
+.flex-hebergements-card .card-content {
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: start;
     box-sizing: border-box;
 }
 
-.grid-hebergements-card .card-rating {
-    margin-bottom: 0px;
+.flex-hebergements-card .card-title {
+    margin-top: 5px;
+    margin-bottom: 2px;
 }
 
-.grid-hebergements-card .card-title {
-    margin-top: 10px;
-}
-
-.grid-hebergements-card .card-subtitle {
-    margin-bottom: 15px;
+.flex-hebergements-card .card-subtitle {
+    margin-bottom: 5px;
 }
 
 /*****************activites-Marseille**********/
 
 .activites-Marseille {
     width: 100%;
-    padding: 30px;
+    padding: 30px 30px 65px 30px;
     box-sizing: border-box;
 }
 
@@ -361,6 +375,7 @@ de photo carte*/
 .activites-Marseille-card {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .activites-Marseille-card .card {
@@ -393,8 +408,8 @@ de photo carte*/
 /**************section Pied de Page***************/
 
 .pied-de-page {
-    width: 1340px;
-    height: 163px;
+    width: 100%;
+    padding-bottom: 20px;
     box-sizing: border-box;
     background-color: var(--main-bg-color);
 }
@@ -402,6 +417,7 @@ de photo carte*/
 .contenu-pied-de-page {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .paragraphe-pied-de-page {
@@ -409,7 +425,7 @@ de photo carte*/
     flex-direction: column;
     align-content: flex-start;
     box-sizing: border-box;
-    width: 375px;
+    width: 30%;
 }
 
 .pied-de-page h4 {
@@ -428,6 +444,26 @@ de photo carte*/
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    
+    .main-container {
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+
+    .rigth-part-smalldevice {
+        display: none;
+    }
+
+    .align-filtres-and-title {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .polices-prem-filtre {
+        margin-bottom: 20px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -458,9 +494,178 @@ de photo carte*/
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+/*****Activité*****/
+.activites-Marseille-card img {
+    width: 100%;
+    height: 200px;
+}
+
+.activites-Marseille .card-content {
+    width: 100%;
+    padding-left: 15px;
+    flex-wrap: wrap;
+}
+
+.activites-Marseille-card .card {
+    width: 23%;
+}
+
+/****************pied de Page******/
+
+.pied-de-page {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--main-bg-color);
+}
+
+.paragraphe-pied-de-page {
+    width: 30%;
+}
+
+
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     /* ... */
-}
+
+    body {
+    margin: 0px;
+    }
+
+    .main-container {
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    nav img {
+        width: 61.09px;
+        height: 19px;
+        margin-bottom: 30px;
+    }
+
+    .position-liens {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a {
+        width: 50%;
+        margin: 0px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    header nav a:hover {
+        border-bottom: 2px solid  #0065FC;
+        color: #0065FC;
+        border-width: 50%;
+        border-top: none;
+
+    }
+
+    .section-title {
+        margin: 0px 20px 8px 20px;
+        font-size: 22px;
+    }
+
+    .centrage-mode-mini {
+        margin-left: 20px;
+    }
+
+    .padding-searchbar {
+        justify-content: center;
+    }
+
+    .rigth-part {
+        display: none;
+    }
+
+    .rigth-part-smalldevice {
+        display: inline;
+        position : relative;
+        right: 10px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 15px 15px 15px 15px;
+        border: none;
+        background-color: #0065FC;
+        color: white;
+    }
+
+    .align-filtres {
+        margin-left: 20px;
+    }
+
+    .police-filtres {
+        font-size: 14px;
+    }
+    
+    .polices-prem-filtre {
+        margin-left: 20px;
+        margin-bottom: 0px;
+    }
+
+    .info {
+        padding-left: 10px;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction:column-reverse;
+    }
+
+    .populaires-cards .card {
+        width: 100%;
+    }
+
+    .populaires-cards{
+        flex-wrap: wrap;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+      }
+
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
+      }
+
+    .flex-hebergements-card .card {
+        width: 100%;
+    }
+
+    .hebergements .section-title {
+        margin: 0px;
+    }
+
+    .activites-Marseille .section-title {
+        margin: 0px;
+    }
+
+    .activites-Marseille-card .card {
+        width: 100%;
+    }
+
+    .paragraphe-pied-de-page {
+        width: 100%;
+    }
+
+    .pied-de-page nav a {
+        width: 80%;
+        margin: 0px 0px 0px 20px;
+        padding-bottom: 10px;
+        text-align:left;
+      }
